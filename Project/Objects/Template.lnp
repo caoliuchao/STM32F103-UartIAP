@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\rcc.o"
+".\objects\startup_stm32f10x_hd.o"
+".\objects\core_cm3.o"
+".\objects\system_stm32f10x.o"
+".\objects\misc.o"
+".\objects\stm32f10x_dma.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_sdio.o"
+".\objects\stm32f10x_usart.o"
+".\objects\stm32f10x_flash.o"
+".\objects\stm32f10x_it.o"
+".\objects\ymodem.o"
+".\objects\flash_app.o"
+".\objects\uart_app.o"
+".\objects\menu_app.o"
+--strict --scatter ".\Objects\Template.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Template.map" -o .\Objects\Template.axf
